@@ -1,28 +1,95 @@
 <!doctype html>
 <html>
 <head>
-	<meta charset="utf-8" />
 	<title>Module 2 Assignment</title>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
 	<style>
-	p {
-		font-family: pattaya;
-		background-color: pastel pink;
+	body {
+		font-family: 'oswald', sans-serif;
+		background-color: lavender;
 	}
-	</style>
+	h1 {
+		font-size: 65px;
+		text-align: center;
+	}
+	
+	section {
+		padding: 20px; 
+		float: left;
+	}
+/**************** base stles **********/
+* {
+	box-sizing: border-box;
+}
+	#title {
+		background-color: #ffffcc;
+		font: bold;
+		font-size: 20px;
+		padding: 0px;
+		border: 1px solid black;
+		margin: 0px;
+		width: 200px;
+		text-align: center;
+		position: relative;
+		bottom:16px;
+		left: 109px;
+	}
+	#content {
+		background-color: #ccffff;
+		padding: 15px;
+		border: 1px solid black;
+		margin: 0px;
+		width: 325px;
+		height: 200px;
+		position: relative;
+		left: 0px;
+		bottom:25px;	
+	}
+/****************** Desktop view ************/
+@media (min-width:992px) {
+	#p1, #p2, #p3 {
+		width: 100%;
+		height: 100%;
+		text-align: justify;
+	}
+}
+/****************** Tablet view *************/
+@media (min-width: 768px) and (max-width:991px) {
+	#p1, #p2 {
+		width: 50%;
+	}
+	#p3 {
+		width: 100%;
+	}
+}
+/****************** Mobile view *************/
+@media (max-width: 767px){
+	#p1 {
+		width: 50%;
+	}
+}
+</style>
+
 </head>
 <body>
 	<h1>Pescatarian Dishes</h1>
-<section id="box1">
-	<h2 background-color="orange">Port of France</h2>
-	<p>Lobster chuncks cooked in a creamy pure&#769e blend of caramalized vegetables simmered in tomato, bay leaf, thyme, seafood stock, and white wine. Seasoned with salt and pepper. Topped with freshly minced chives as garnish. Served alone.</p>
+<section>
+	<div id="content">
+	<h2 id="title" >Port of France</h2> 
+	<p id="p1">Lobster chuncks cooked in a creamy pure&#769e blend of caramalized vegetables simmered in tomato, bay leaf, thyme, seafood stock, and white wine. Seasoned with salt and pepper. Topped with freshly minced chives as garnish. Served alone.</p>
+</div>
 </section>
-<section id="box2">
-	<h2>Mediterranean Seaside</h2>
-	<p>Fresh mussels (brushed and bearded) cooked in saute&#769ed onions and garlic. Simmered in diced tomatoes and white wine. Seasoned with salt and pepper. Topped with fresh parsley as garnish. Served with grilled white bread on the side.</p>
+<section>
+	<div id="content">
+	<h2 id="title">Mediterranean Seaside</h2>
+	<p id="p2">Fresh mussels (brushed and bearded) cooked in saute&#769ed onions and garlic. Simmered in diced tomatoes and white wine. Seasoned with salt and pepper. Topped with fresh parsley as garnish. Served with grilled white bread on the side.</p>
+</div>
 </section>
-<section id="box3">
-	<h2>Greek Summer</h2>
-	<p>Baked salmon topped with marinated lemon feta cheese, diced tomatoes, Kalamata olives, Persian cucumbers, and chopped red onions. Lightly seasoned with salt and pepper. Topped with fresh minced dill. Served on a bed of arugula or spinach.</p>
+<section>
+	<div id="content">
+	<h2 id="title">Greek Summer</h2>
+	<p id="p3">Baked salmon topped with marinated lemon feta cheese, diced tomatoes, Kalamata olives, Persian cucumbers, and chopped red onions. Lightly seasoned with salt and pepper. Topped with fresh minced dill. Served on a bed of arugula or spinach.</p>
+</div>
 </section>
 </body>
 </html>
